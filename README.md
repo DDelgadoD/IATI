@@ -98,15 +98,15 @@ Project Link: [https://github.com/DDelgadoD/IATI](https://github.com/DDelgadoD/I
 [license-url]: https://raw.githubusercontent.com/DDelgadoD/DDelgadoD/main/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0072B1
 [linkedin-url]: https://www.linkedin.com/in/david-delgado-duenas/
-[contributors-shield]: https://img.shields.io/github/contributors/DDelgadoD/IATIt.svg?style=for-the-badge
-[contributors-url]: https://github.com/DDelgadoD/Linked_List/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/DDelgadoD/IATI.svg?style=for-the-badge
+[contributors-url]: https://github.com/DDelgadoD/IATI/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/DDelgadoD/IATI.svg?style=for-the-badge
-[forks-url]: https://github.com/DDelgadoD/Linked_List/network/members
+[forks-url]: https://github.com/DDelgadoD/IATI/network/members
 [stars-shield]: https://img.shields.io/github/stars/DDelgadoD/IATI.svg?style=for-the-badge
-[stars-url]: https://github.com/DDelgadoD/Linked_List/stargazers
+[stars-url]: https://github.com/DDelgadoD/IATI/stargazers
 [issues-shield]: https://img.shields.io/github/issues/DDelgadoD/IATI.svg?style=for-the-badge
-[issues-url]: https://github.com/DDelgadoD/Linked_List/issues
+[issues-url]: https://github.com/DDelgadoD/IATI/issues
 [license-shield]: https://img.shields.io/github/license/DDelgadoD/IATI.svg?style=for-the-badge
-[license-url]: https://github.com/DDelgadoD/Linked_Lists/blob/master/LICENSE.txt
+[license-url]: https://github.com/DDelgadoD/IATI/blob/master/LICENSE.txt
 [product-screenshot]: images/screenshot.png
  
