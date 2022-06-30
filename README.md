@@ -17,24 +17,24 @@
 <h3 align="center">IATI</h3>
 
   <p align="center">
-    Technical Test IATI
+    Test Técnico IATI
 </div>
 
 
 
 <!-- TABLE OF CONTENTS -->
-## Table of Contents
+## Tabla de Contenidos
   <ol>
-    <li><a href="#archive-list">Archive List</a></li>
-    <li><a href="#original-petition">Original Petition</a></li>
-	<li><a href="#built-with">Built with</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#archive-list">Archivos Incluidos</a></li>
+    <li><a href="#original-petition">Petición Original</a></li>
+	<li><a href="#built-with">Construido con</a></li>
+    <li><a href="#license">Licencia</a></li>
+    <li><a href="#contact">Contacto</a></li>
   </ol>
 
 
 <!-- ARCHIVE LIST -->
-## Archive List
+## Archivos Incluidos
 
 ### 
 
@@ -52,7 +52,7 @@
 ---
 
 <!-- ORIGINAL PETITION -->
-## Original Petition
+## Petición Original
 ## Carrito de compra  
 La idea es crear una aplicación muy sencilla para que la use un frontal. Esta aplicación tendrá cuatro acciones (endpoints) principales:
 
@@ -82,14 +82,15 @@ como EMAIL_BACKEND la escritura de emails por consola
 - No se pide que la prueba sea perfecta aunque sí que sea funcional. La app deberá poder levantarse en local y ser usada desde navegador o Postman.
 
 <!--BUILT WITH-->
-## Built With
+## Hecho con ...
 
 * [Python](https://www.python.org/)
+* [Django](https://www.djangoproject.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
-## License
+## Licencia
 
 Distributed under the MIT License. See [`LICENSE.md`](https://raw.githubusercontent.com/DDelgadoD/DDelgadoD/main/LICENSE.md) for more information.
 
@@ -98,7 +99,7 @@ Distributed under the MIT License. See [`LICENSE.md`](https://raw.githubusercont
 
 
 <!-- CONTACT -->
-## Contact
+## Contacto
 
 David Delgado-Dueñas
 
@@ -107,7 +108,7 @@ David Delgado-Dueñas
 [![ResearchGate][researchgate-shield]][researchgate-url]
 [![Gmail][gmail-shield]][gmail-url]
 
-Project Link: [https://github.com/DDelgadoD/IATI](https://github.com/DDelgadoD/IATI)
+Link del proyecto: [https://github.com/DDelgadoD/IATI](https://github.com/DDelgadoD/IATI)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
