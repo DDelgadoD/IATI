@@ -36,8 +36,12 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',  
-    'tienda' # Aplicación base
+    'django.contrib.staticfiles',
+    'polymorphic',  # polymorphic classes add-on
+    'rest_framework',  # api add-on
+    'shop',  # base app
+    'api',  # api app
+
 ]
 
 MIDDLEWARE = [
@@ -119,3 +123,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
