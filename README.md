@@ -9,14 +9,14 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
+<div style="text-align:center;">
   <a href="http://daviddelgadoduenas.pythonanywhere.com/IATI/">
     <img src="https://raw.githubusercontent.com/DDelgadoD/DDelgadoD/main/images/logo.jpg" alt="Logo" width="250" height="250">
   </a>
 
-<h3 align="center">IATI</h3>
+<h3 style="text-align:center;">IATI</h3>
 
-  <p align="center">
+  <p style="text-align:center;">
     Test Técnico IATI
 </div>
 
@@ -24,17 +24,15 @@
 
 <!-- TABLE OF CONTENTS -->
 ## Tabla de Contenidos
-  <ol>
-    <li><a href="#archive-list">Archivos Incluidos</a></li>
-    <li><a href="#original-petition">Petición Original</a></li>
-	<li><a href="#built-with">Construido con</a></li>
-    <li><a href="#license">Licencia</a></li>
-    <li><a href="#contact">Contacto</a></li>
-  </ol>
-
+1. [Archivos Incluidos](#Archivos)
+2. [Petición Original](#Peti)
+3. [Hecho con...](#hecho)
+4. [Licencia](#licencia)
+5. [Contacto](#contacto)
 
 <!-- ARCHIVE LIST -->
-## Archivos Incluidos
+
+## <a name="Archivos"></a> Archivos Incluidos 
 
 ### 
 
@@ -52,7 +50,7 @@
 ---
 
 <!-- ORIGINAL PETITION -->
-## Petición Original
+## <a name="Peti"></a>Petición Original
 ## Carrito de compra  
 La idea es crear una aplicación muy sencilla para que la use un frontal. Esta aplicación tendrá cuatro acciones (endpoints) principales:
 
@@ -82,24 +80,24 @@ como EMAIL_BACKEND la escritura de emails por consola
 - No se pide que la prueba sea perfecta aunque sí que sea funcional. La app deberá poder levantarse en local y ser usada desde navegador o Postman.
 
 <!--BUILT WITH-->
-## Hecho con ...
+## <a name="Hecho"></a> Hecho con ...
 
 * [Python](https://www.python.org/)
 * [Django](https://www.djangoproject.com/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p style="text-align:right;">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
-## Licencia
+## <a name="Licencia"></a>Licencia
 
 Distributed under the MIT License. See [`LICENSE.md`](https://raw.githubusercontent.com/DDelgadoD/DDelgadoD/main/LICENSE.md) for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p style="text-align:right;">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- CONTACT -->
-## Contacto
+## <a name="Contacto"></a>Contacto
 
 David Delgado-Dueñas
 
@@ -110,10 +108,9 @@ David Delgado-Dueñas
 
 Link del proyecto: [https://github.com/DDelgadoD/IATI](https://github.com/DDelgadoD/IATI)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p style="text-align:right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [researchgate-shield]:https://img.shields.io/badge/-researchgate-white.svg?style=for-the-badge&logo=researchgate&colorB=33b864&logoColor=white
 [researchgate-url]: https://www.researchgate.net/profile/David-Delgado-Duenas
 [gmail-shield]: https://img.shields.io/badge/-Gmail-black.svg?style=for-the-badge&logo=gmail&colorB=red&logoColor=white
