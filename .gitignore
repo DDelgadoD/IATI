@@ -140,4 +140,4 @@ GitHub.sublime-settings
 **/migrations/
 __init__.py
 
-.idea/
+.idea/*
