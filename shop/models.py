@@ -4,7 +4,7 @@ from polymorphic.models import PolymorphicModel  # https://django-polymorphic.re
 
 # Base Product definition as Polymorphic Class
 class Product(PolymorphicModel):
-    creation_data = models.DateField()
+    creation_date = models.DateField()
     primary_color = models.CharField(max_length=100)
     secondary_color = models.CharField(max_length=100)
     brand = models.CharField(max_length=100)

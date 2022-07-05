@@ -11,7 +11,7 @@ from .serializers import ProductSerializer, CartSerializer
 
 class ProductApiView(generics.ListAPIView):
     http_method_names = ['get']
-    queryset = Product.objects.all().order_by('polymorphic_ctype')
+    queryset = Product.objects.all().order_by('polymorphic_ctype', "-creation_date")
     serializer_class = ProductSerializer
 
 

@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "polymorphic_ctype": 9,
-    "creation_data": "2022-07-01",
+    "creation_date": "2022-07-01",
     "primary_color": "red",
     "secondary_color": "black",
     "brand": "nike",
@@ -18,7 +18,7 @@
   "pk": 2,
   "fields": {
     "polymorphic_ctype": 10,
-    "creation_data": "2022-07-01",
+    "creation_date": "2022-07-01",
     "primary_color": "navy blue",
     "secondary_color": "red",
     "brand": "adidas",
@@ -32,7 +32,7 @@
   "pk": 3,
   "fields": {
     "polymorphic_ctype": 9,
-    "creation_data": "2022-07-01",
+    "creation_date": "2022-07-01",
     "primary_color": "orange",
     "secondary_color": "black",
     "brand": "nike",
@@ -46,7 +46,7 @@
   "pk": 4,
   "fields": {
     "polymorphic_ctype": 10,
-    "creation_data": "2022-07-05",
+    "creation_date": "2022-07-05",
     "primary_color": "white",
     "secondary_color": "white",
     "brand": "Nike",
@@ -60,7 +60,7 @@
   "pk": 5,
   "fields": {
     "polymorphic_ctype": 9,
-    "creation_data": "2022-07-05",
+    "creation_date": "2022-07-05",
     "primary_color": "white",
     "secondary_color": "balck",
     "brand": "Vans",
@@ -74,7 +74,7 @@
   "pk": 6,
   "fields": {
     "polymorphic_ctype": 9,
-    "creation_data": "2022-07-05",
+    "creation_date": "2022-07-05",
     "primary_color": "black",
     "secondary_color": "white",
     "brand": "adidas",
@@ -88,7 +88,7 @@
   "pk": 7,
   "fields": {
     "polymorphic_ctype": 10,
-    "creation_data": "2022-07-05",
+    "creation_date": "2022-07-05",
     "primary_color": "balck",
     "secondary_color": "yellow",
     "brand": "rip curl",
@@ -102,7 +102,7 @@
   "pk": 8,
   "fields": {
     "polymorphic_ctype": 10,
-    "creation_data": "2022-07-01",
+    "creation_date": "2022-07-01",
     "primary_color": "red",
     "secondary_color": "blue",
     "brand": "lacoste",
@@ -116,7 +116,7 @@
   "pk": 9,
   "fields": {
     "polymorphic_ctype": 10,
-    "creation_data": "2022-06-01",
+    "creation_date": "2022-06-01",
     "primary_color": "Green",
     "secondary_color": "Black",
     "brand": "black lily",
@@ -130,7 +130,7 @@
   "pk": 10,
   "fields": {
     "polymorphic_ctype": 10,
-    "creation_data": "2022-07-05",
+    "creation_date": "2022-07-05",
     "primary_color": "red",
     "secondary_color": "white",
     "brand": "AC/DC",
