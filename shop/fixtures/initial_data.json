@@ -1,0 +1,227 @@
+[
+{
+  "model": "shop.product",
+  "pk": 1,
+  "fields": {
+    "polymorphic_ctype": 9,
+    "creation_data": "2022-07-01",
+    "primary_color": "red",
+    "secondary_color": "black",
+    "brand": "nike",
+    "picture": "red_black_Cap.jpg",
+    "description": "Red Cap with Black Stripe and Red Nike Logo.",
+    "unitary_price": "19.99"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 2,
+  "fields": {
+    "polymorphic_ctype": 10,
+    "creation_data": "2022-07-01",
+    "primary_color": "navy blue",
+    "secondary_color": "red",
+    "brand": "adidas",
+    "picture": "blue_red_Shirt_Woman.jpg",
+    "description": "Navy Blue Shirt of Cotton with Sleeves and Red Adidas logo for Woman size M",
+    "unitary_price": "29.69"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 3,
+  "fields": {
+    "polymorphic_ctype": 9,
+    "creation_data": "2022-07-01",
+    "primary_color": "orange",
+    "secondary_color": "black",
+    "brand": "nike",
+    "picture": "orange_black_Cap.jpg",
+    "description": "Orange Cap with black line and Golden logo",
+    "unitary_price": "16.50"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 4,
+  "fields": {
+    "polymorphic_ctype": 10,
+    "creation_data": "2022-07-05",
+    "primary_color": "white",
+    "secondary_color": "white",
+    "brand": "Nike",
+    "picture": "White_White_blacklogo_Cap_dCA3QqV.jpg",
+    "description": "White cap with black Nike logo.",
+    "unitary_price": "13.50"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 5,
+  "fields": {
+    "polymorphic_ctype": 9,
+    "creation_data": "2022-07-05",
+    "primary_color": "white",
+    "secondary_color": "balck",
+    "brand": "Vans",
+    "picture": "White_White_blacklogo_Cap_aAgLivX.jpg",
+    "description": "White and black Cap with Black Vans logo.",
+    "unitary_price": "16.25"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 6,
+  "fields": {
+    "polymorphic_ctype": 9,
+    "creation_data": "2022-07-05",
+    "primary_color": "black",
+    "secondary_color": "white",
+    "brand": "adidas",
+    "picture": "Balck_White_whitelogo_Cap_QgtEdae.jpg",
+    "description": "Black and white Adidas cap with white logo.",
+    "unitary_price": "22.95"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 7,
+  "fields": {
+    "polymorphic_ctype": 10,
+    "creation_data": "2022-07-05",
+    "primary_color": "balck",
+    "secondary_color": "yellow",
+    "brand": "rip curl",
+    "picture": "Black_yellow_shirt_Kid_l35DKKb.jpg",
+    "description": "Black and yellow shirt size S for men.",
+    "unitary_price": "9.75"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 8,
+  "fields": {
+    "polymorphic_ctype": 10,
+    "creation_data": "2022-07-01",
+    "primary_color": "red",
+    "secondary_color": "blue",
+    "brand": "lacoste",
+    "picture": "Red_blue_shirt_man_86hzdki.jpg",
+    "description": "Red and blue shirt lacoste size L for men.",
+    "unitary_price": "54.50"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 9,
+  "fields": {
+    "polymorphic_ctype": 10,
+    "creation_data": "2022-06-01",
+    "primary_color": "Green",
+    "secondary_color": "Black",
+    "brand": "black lily",
+    "picture": "Green_black_shirt_unisex_FWGriBu.jpg",
+    "description": "Green and black Black Lily Unisex Shirt size S.",
+    "unitary_price": "29.00"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 10,
+  "fields": {
+    "polymorphic_ctype": 10,
+    "creation_data": "2022-07-05",
+    "primary_color": "red",
+    "secondary_color": "white",
+    "brand": "AC/DC",
+    "picture": "Red_white_shirt_woman_lLGuX0Q.jpg",
+    "description": "Red and white AC/DC Shirt for woman of size M.",
+    "unitary_price": "19.99"
+  }
+},
+{
+  "model": "shop.cap",
+  "pk": 1,
+  "fields": {
+    "logo_color": "red"
+  }
+},
+{
+  "model": "shop.cap",
+  "pk": 3,
+  "fields": {
+    "logo_color": "golden"
+  }
+},
+{
+  "model": "shop.cap",
+  "pk": 4,
+  "fields": {
+    "logo_color": "black"
+  }
+},
+{
+  "model": "shop.cap",
+  "pk": 5,
+  "fields": {
+    "logo_color": "black"
+  }
+},
+{
+  "model": "shop.cap",
+  "pk": 6,
+  "fields": {
+    "logo_color": "white"
+  }
+},
+{
+  "model": "shop.shirt",
+  "pk": 2,
+  "fields": {
+    "size": "M",
+    "type_of_fabric": "Cotton",
+    "sizing": "Woman",
+    "hasSleeves": true
+  }
+},
+{
+  "model": "shop.shirt",
+  "pk": 7,
+  "fields": {
+    "size": "S",
+    "type_of_fabric": "Cotton",
+    "sizing": "Man",
+    "hasSleeves": true
+  }
+},
+{
+  "model": "shop.shirt",
+  "pk": 8,
+  "fields": {
+    "size": "L",
+    "type_of_fabric": "Cotton",
+    "sizing": "Man",
+    "hasSleeves": true
+  }
+},
+{
+  "model": "shop.shirt",
+  "pk": 9,
+  "fields": {
+    "size": "S",
+    "type_of_fabric": "Cotton",
+    "sizing": "Unisex",
+    "hasSleeves": true
+  }
+},
+{
+  "model": "shop.shirt",
+  "pk": 10,
+  "fields": {
+    "size": "M",
+    "type_of_fabric": "Cotton",
+    "sizing": "Woman",
+    "hasSleeves": false
+  }
+}
+]

@@ -1,0 +1,26 @@
+{% extends 'base_navbar.html' %}
+{% block welcome %}
+            <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">IATI DJANGO REST FRAMEWORK</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Prueba Técnica</p>
+                </div>
+            </div>
+        </header>
+{% endblock %}
+{% block content %}
+    <h1>API methods</h1>
+    <ul>
+        <li> GET: api/v1/product_list/</li>
+        <li> POST: add_to_cart</li>
+        <ul>
+            <li>api/v1/add_to_cart/&lt;int:product_id&gt;</li>
+            <li>api/v1/add_to_cart/&lt;int:product_id&gt;/&lt;int:quantity&gt;</li>
+            <li>api/v1/add_to_cart/&lt;int:product_id&gt;/&lt;str:cart></li>
+            <li>api/v1/add_to_cart/&lt;int:product_id&gt;/&lt;int:quantity&gt;/&lt;str:cart&gt;</li>
+        </ul>
+        <li>GET: api/v1/cart/&lt;str:creation_date&gt;</li>
+        <li>GET: api/v1/checkout/&lt;str:creation_date&gt;</li>
+    </ul>
+{% endblock content %}

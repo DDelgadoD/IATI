@@ -131,5 +131,5 @@ Link del proyecto: [https://github.com/DDelgadoD/IATI](https://github.com/DDelga
 [issues-url]: https://github.com/DDelgadoD/IATI/issues
 [license-shield]: https://img.shields.io/github/license/DDelgadoD/IATI.svg?style=for-the-badge
 [license-url]: https://github.com/DDelgadoD/IATI/blob/master/LICENSE.txt
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: media/screenshot.png
  

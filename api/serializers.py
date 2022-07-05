@@ -1,5 +1,4 @@
 from rest_framework import serializers  # https://www.django-rest-framework.org/ (need to be added as app)
-
 from shop.models import Product, Cap, Shirt, Cart, Item
 
 
@@ -16,6 +15,7 @@ class ShirtSerializer(serializers.ModelSerializer):
 
 
 class ProductSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Product
         fields = '__all__'
@@ -29,13 +29,14 @@ class ProductSerializer(serializers.ModelSerializer):
 
 
 class ProductBasicSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Product
-        fields = ['id', 'description', 'picture_url', 'unitary_price']
+        fields = ['id', 'description', 'picture', 'unitary_price']
 
 
 class ItemSerializer(serializers.ModelSerializer):
-    product = ProductBasicSerializer(read_only=True)
+    product = ProductBasicSerializer()
 
     class Meta:
         model = Item
@@ -48,3 +49,4 @@ class CartSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cart
         fields = ['creation_date', 'total_products', 'items']
+

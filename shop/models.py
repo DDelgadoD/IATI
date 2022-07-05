@@ -3,18 +3,18 @@ from polymorphic.models import PolymorphicModel  # https://django-polymorphic.re
 
 
 # Base Product definition as Polymorphic Class
-class Product (PolymorphicModel):
+class Product(PolymorphicModel):
     creation_data = models.DateField()
     primary_color = models.CharField(max_length=100)
     secondary_color = models.CharField(max_length=100)
     brand = models.CharField(max_length=100)
-    picture_url = models.URLField(max_length=200)
+    picture = models.ImageField()
     description = models.TextField()
     unitary_price = models.DecimalField(max_digits=6, decimal_places=2)
 
 
 # Cap definition as child class Product
-class Cap (Product):
+class Cap(Product):
     logo_color = models.CharField(max_length=100)
 
 
