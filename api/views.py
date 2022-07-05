@@ -15,9 +15,9 @@ class ProductApiView(generics.ListAPIView):
     serializer_class = ProductSerializer
 
 
-class CartApiView(generics.UpdateAPIView):
+class CartAddView(generics.UpdateAPIView):
     serializer_class = CartSerializer
-    http_method_names = ['get', 'post']
+    http_method_names = ['post']
 
     def post(self, request, product_id, quantity=1, cart=datetime.now().strftime('%Y-%m-%d')):
         # if the quantity and cart data comes from request JSON it overrides url
@@ -34,6 +34,15 @@ class CartApiView(generics.UpdateAPIView):
         item.save()
         # If product is not found the response will be 404 not found because these we don't need to do nothing
         return Response(CartSerializer(cart, context=self.get_serializer_context()).data)
+
+    def get_serializer_context(self):
+        context = {'request': self.request}
+        return context
+
+
+class CartApiView(generics.UpdateAPIView):
+    serializer_class = CartSerializer
+    http_method_names = ['get']
 
     def get(self, request, creation_date):
         cart = get_object_or_404(Cart, creation_date=datetime.strptime(creation_date, '%Y-%m-%d').date())
