@@ -33,43 +33,43 @@
 <!-- ARCHIVE LIST -->
 
 ## <a name="Archivos"></a> Archivos Incluidos 
-- IATI Localhost.postman_collection.json -> export de los endpoints para usar Postman con un localhost
-- IATI PythonAnywhere.postman_collection.json -> export de los endpoints para usar Postman con la web "PythonAnywhere".
-- manage.py -> no modificado
-- README.md -> este archivo
-- requirements.txt -> requerimientos del proyecto generado por venv.
+- __IATI Localhost.postman_collection.json__ -> export de los endpoints para usar Postman con un localhost
+- __IATI PythonAnywhere.postman_collection.json__ -> export de los endpoints para usar Postman con la web "PythonAnywhere".
+- __manage.py__ -> no modificado
+- __README.md__ -> este archivo
+- __requirements.txt__ -> requerimientos del proyecto generado por venv.
 
 ### api  
 
-- apps.py -> no modificado.
-- serializers.py -> Aquí se incluyen todos los serializadores para la API.
-- test.py
-- urls.py -> Aquí se incluyen todos los endpoints de la API.
-- views.py -> Aquí se incluyen las vistas para los endpoints de la API.
+- __apps.py__ -> no modificado.
+- __serializers.py__ -> Aquí se incluyen todos los serializadores para la API.
+- __test.py__
+- __urls.py__ -> Aquí se incluyen todos los endpoints de la API.
+- __views.py__ -> Aquí se incluyen las vistas para los endpoints de la API.
 
 ### config 
 
 Este es el directorio base del proyecto. Por costumbre lo nombro como config.
-- asgi.py -> no modificado.
-- settings -> Aquí se han realizado los cambios necesarios para que el proyecto funcione. 
-- urls -> Aquí se incluyen las direcciones url globales de todo el proyecto.
-- wsgi.py -> no modificado
+- __asgi.py__ -> no modificado.
+- __settings__ -> Aquí se han realizado los cambios necesarios para que el proyecto funcione. 
+- __urls__ -> Aquí se incluyen las direcciones url globales de todo el proyecto.
+- __wsgi.py__ -> no modificado
 
 ### media
 
 Este directorio aloja todas las imágenes del proyecto. Como las imagenes se usan globalmente he decidido poner la carpeta en el directorio raíz
 
 ### shop
-- admin.py -> en este archivo se han añadido "Caps" y "Shirts" para poder poblar la base de datos.
-- apps.py -> no modificado
-- models -> en este archivo se han creado los modelos de "shop". "Product" que es polimórfico con las subclasses "Cap" y "Shirt", "Item" que es una línea del carrito de la compra, "Cart" que es el carrito de la compra. 
+- __admin.py__ -> en este archivo se han añadido "Caps" y "Shirts" para poder poblar la base de datos.
+- __apps.py__ -> no modificado
+- __models__ -> en este archivo se han creado los modelos de "shop". "Product" que es polimórfico con las subclasses "Cap" y "Shirt", "Item" que es una línea del carrito de la compra, "Cart" que es el carrito de la compra. 
 #### [DIR] automatic migration
-- 002_load_initial_data.py -> Archivo que permite poblar la base de datos con "migrate" añadiéndolo la carpeta migrations de shop después de hacer "makemigrations" para que se cree "0001_inital.py"
+- __002_load_initial_data.py__ -> Archivo que permite poblar la base de datos con "migrate" añadiéndolo la carpeta migrations de shop después de hacer "makemigrations" para que se cree "0001_inital.py"
 #### [DIR] fixtures
-- initial_data.json -> JSON que contiene la información para poblar la base de datos con 10 productos.
+- __initial_data.json__ -> JSON que contiene la información para poblar la base de datos con 10 productos.
 #### [DIR] management
 #### - [SUBDIR] commands
-- loaddata.py -> Archivo que sobreescribe el loaddata de django para hacer lo que pide el enunciado y no cargar de nuevo los datos de fixture si ya existen.
+- __loaddata.py__ -> Archivo que sobreescribe el loaddata de django para hacer lo que pide el enunciado y no cargar de nuevo los datos de fixture si ya existen.
  
 ### static
 
