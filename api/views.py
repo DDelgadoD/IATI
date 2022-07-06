@@ -1,10 +1,12 @@
 from datetime import datetime
-from json2html import *
+
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404
+from json2html import *
 from rest_framework import generics  # https://www.django-rest-framework.org/ (need to be added as app)
 from rest_framework.response import Response
 from rest_framework.views import APIView
+
 from shop.models import Product, Cart, Item
 from .serializers import ProductSerializer, CartSerializer
 

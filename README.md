@@ -27,12 +27,13 @@
    - Estado del los requerimientos de la prueba
    - Consideraciones sobre la prueba
 2. [Instalación](#Setup)
-3. [Pruébalo en vivo](#Try)
-4. [Archivos Incluidos](#Archivos)
-5. [Petición Original](#Peti)
-6. [Hecho con...](#hecho)
-7. [Licencia](#licencia)
-8. [Contacto](#contacto)
+3. [Endpoints](#Endpoints)
+4. [Pruébalo en vivo](#Try)
+5. [Archivos Incluidos](#Archivos)
+6. [Petición Original](#Peti)
+7. [Hecho con...](#hecho)
+8. [Licencia](#licencia)
+9. [Contacto](#contacto)
 
 <!-- INTRODUCTION -->
 
@@ -64,7 +65,7 @@ En cuanto a las fixtures, he creado dos maneras para poder insertarlas en la bas
 Para cumplir con los requisitos de la prueba, he creado un "loaddata" custom que no permite a los productos ser creados si ya existen.
 No he creado un script para hacerlo por que no lo he considerado necesario porque al fin y al cabo es un comando a correr. La migración de datos automática no está disponible desde Django 1.7 por eso aun teniendo "initial_data.json" en la carpeta fixture no se realiza la carga. La opción recomendada es "loaddata" porque la migración automática en caso de fallar no permite una gestión tan buena.
 
-Sobre el testeo de la prueba técnica este se ha hecho a mano con Postman donde se han testado todos los puntos de la prueba. Los endpoints usados para el testeo se pueden importar tanto para hacer las comprobaciones en local como en la implementación en vivo alojada en la web [PythonAnywhere](http://daviddelgadoduenas.pythonanywhere.com/).
+Sobre el testeo de la prueba técnica este se ha hecho tanto con tests automatizados (/api/test.py) como a mano con Postman donde se han testado todos los puntos de la prueba. Los endpoints usados para el testeo se pueden importar tanto para hacer las comprobaciones en local como en la implementación en vivo alojada en la web [PythonAnywhere](http://daviddelgadoduenas.pythonanywhere.com/).
 
 <p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
 
@@ -93,6 +94,23 @@ Si en cambio elegimos usar las migraciones para cargar los datos, tendremos que 
 
 <p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
 
+<!-- ENDPOINTS -->
+
+## <a name="Endpoints"></a> Endpoints
+
+1. GET: api/v1/product_list
+2. POST: api/v1/add_to_cart
+   - api/v1/add_to_cart/&lt;int:product_id&gt;
+   - api/v1/add_to_cart/&lt;int:product_id&gt;/&lt;int:quantity&gt;
+   - api/v1/add_to_cart/&lt;int:product_id&gt;/&lt;str:cart>
+   - api/v1/add_to_cart/&lt;int:product_id&gt;/&lt;int:quantity&gt;/&lt;str:cart&gt;
+3. GET: api/v1/cart/&lt;str:creation_date&gt;
+4. GET: api/v1/checkout/&lt;str:creation_date&gt;
+
+<p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
+
+
+
 <!-- TRY IT -->
 
 ## <a name="Try"></a> Pruébalo en vivo
@@ -116,7 +134,7 @@ La aplicación está disponible para la prueba en vivo en:
 
 - __apps.py__ -> no modificado.
 - __serializers.py__ -> Aquí se incluyen todos los serializadores para la API.
-- __test.py__
+- __test.py__ -> Test creados para testear los endpoints
 - __urls.py__ -> Aquí se incluyen todos los endpoints de la API.
 - __views.py__ -> Aquí se incluyen las vistas para los endpoints de la API.
 
