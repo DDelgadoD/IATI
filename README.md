@@ -16,8 +16,7 @@
 
 <h3 style="text-align:center;">IATI</h3>
 
-  <p style="text-align:center;">
-    Test Técnico IATI
+  <p style="text-align:center;">Test Técnico IATI</p>
 </div>
 
 
