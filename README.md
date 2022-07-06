@@ -23,11 +23,25 @@
 
 <!-- TABLE OF CONTENTS -->
 ## Tabla de Contenidos
-1. [Archivos Incluidos](#Archivos)
-2. [Petición Original](#Peti)
-3. [Hecho con...](#hecho)
-4. [Licencia](#licencia)
-5. [Contacto](#contacto)
+1. [Introducción](#Intro)
+2. [Pruébalo en vivo](#Try)
+3. [Archivos Incluidos](#Archivos)
+4. [Petición Original](#Peti)
+5. [Hecho con...](#hecho)
+6. [Licencia](#licencia)
+7. [Contacto](#contacto)
+
+<!-- INTRODUCTION -->
+
+## <a name="Intro"></a> Introducción
+
+---
+
+<!-- TRY IT -->
+
+## <a name="Try"></a> Pruébalo en vivo
+
+---
 
 <!-- ARCHIVE LIST -->
 
@@ -77,16 +91,6 @@ En este directorio se incluyen los archivos para carga de web estática. No se h
 ### templates
 
 En este directorio se incluyen los archivos para la página principal que muestra los endpoints disponibles.
-
-
----
-
-### 
-
----
-
-###
-
 
 ---
 
