@@ -11,7 +11,7 @@
 <br />
 <div style="text-align:center;">
   <a href="http://daviddelgadoduenas.pythonanywhere.com/IATI/">
-    <img src="https://raw.githubusercontent.com/DDelgadoD/DDelgadoD/main/images/logo.jpg" alt="Logo" width="250" height="250">
+    <img src="https://raw.githubusercontent.com/DDelgadoD/DDelgadoD/IATI/images/Screenshot.png" alt="Logo" width="250" height="250">
   </a>
 
 <h3 style="text-align:center;">IATI</h3>
@@ -33,9 +33,51 @@
 <!-- ARCHIVE LIST -->
 
 ## <a name="Archivos"></a> Archivos Incluidos 
+- IATI Localhost.postman_collection.json -> export de los endpoints para usar Postman con un localhost
+- IATI PythonAnywhere.postman_collection.json -> export de los endpoints para usar Postman con la web "PythonAnywhere".
+- manage.py -> no modificado
+- README.md -> este archivo
+- requirements.txt -> requerimientos del proyecto generado por venv.
 
-### 
+### api  
 
+- apps.py -> no modificado.
+- serializers.py -> Aquí se incluyen todos los serializadores para la API.
+- test.py
+- urls.py -> Aquí se incluyen todos los endpoints de la API.
+- views.py -> Aquí se incluyen las vistas para los endpoints de la API.
+
+### config 
+
+Este es el directorio base del proyecto. Por costumbre lo nombro como config.
+- asgi.py -> no modificado.
+- settings -> Aquí se han realizado los cambios necesarios para que el proyecto funcione. 
+- urls -> Aquí se incluyen las direcciones url globales de todo el proyecto.
+- wsgi.py -> no modificado
+
+### media
+
+Este directorio aloja todas las imágenes del proyecto. Como las imagenes se usan globalmente he decidido poner la carpeta en el directorio raíz
+
+### shop
+- admin.py -> en este archivo se han añadido "Caps" y "Shirts" para poder poblar la base de datos.
+- apps.py -> no modificado
+- models -> en este archivo se han creado los modelos de "shop". "Product" que es polimórfico con las subclasses "Cap" y "Shirt", "Item" que es una línea del carrito de la compra, "Cart" que es el carrito de la compra. 
+#### [DIR] automatic migration
+- 002_load_initial_data.py -> Archivo que permite poblar la base de datos con "migrate" añadiéndolo la carpeta migrations de shop después de hacer "makemigrations" para que se cree "0001_inital.py"
+#### [DIR] fixtures
+- initial_data.json -> JSON que contiene la información para poblar la base de datos con 10 productos.
+#### [DIR] management
+#### - [SUBDIR] commands
+- loaddata.py -> Archivo que sobreescribe el loaddata de django para hacer lo que pide el enunciado y no cargar de nuevo los datos de fixture si ya existen.
+ 
+### static
+
+En este directorio se incluyen los archivos para carga de web estática. No se ha realizado "collectstatic", así que solo están los que se han añadido manualmente.
+
+### templates
+
+En este directorio se incluyen los archivos para la página principal que muestra los endpoints disponibles.
 
 
 ---

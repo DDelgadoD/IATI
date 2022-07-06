@@ -138,7 +138,7 @@ GitHub.sublime-settings
 
 
 **/migrations/
-__init__.py
+**/__init__.py
 
 /.idea/*
 /.idea/
