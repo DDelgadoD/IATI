@@ -29,12 +29,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "{{base}}add_to_cart/1",
+					"raw": "{base}}add_to_cart/1/2022-07-06",
 					"host": [
-						"{{base}}add_to_cart"
+						"{base}}add_to_cart"
 					],
 					"path": [
-						"1"
+						"1",
+						"2022-07-06"
 					]
 				}
 			},
@@ -46,12 +47,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "{{base}}add_to_cart/1",
+					"raw": "{{base}}add_to_cart/2/10",
 					"host": [
 						"{{base}}add_to_cart"
 					],
 					"path": [
-						"1"
+						"2",
+						"10"
 					]
 				}
 			},
@@ -63,12 +65,14 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "{{base}}add_to_cart/1",
+					"raw": "{{base}}add_to_cart/3/5/2022-07-06",
 					"host": [
 						"{{base}}add_to_cart"
 					],
 					"path": [
-						"1"
+						"3",
+						"5",
+						"2022-07-06"
 					]
 				}
 			},
@@ -109,7 +113,16 @@
 			"name": "checkout",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{base}}checkout/2022-07-06",
+					"host": [
+						"{{base}}checkout"
+					],
+					"path": [
+						"2022-07-06"
+					]
+				}
 			},
 			"response": []
 		}

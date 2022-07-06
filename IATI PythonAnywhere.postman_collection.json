@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "3f9cdde5-5e07-4ee3-ac10-525352f91b7e",
-		"name": "IATI",
+		"name": "IATI PythonAnywhere",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "20122497"
 	},
@@ -29,12 +29,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "{{base}}add_to_cart/1",
+					"raw": "{{base}}add_to_cart/1/2022-07-06",
 					"host": [
 						"{{base}}add_to_cart"
 					],
 					"path": [
-						"1"
+						"1",
+						"2022-07-06"
 					]
 				}
 			},
@@ -46,12 +47,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "{{base}}add_to_cart/1",
+					"raw": "{{base}}add_to_cart/2/10",
 					"host": [
 						"{{base}}add_to_cart"
 					],
 					"path": [
-						"1"
+						"2",
+						"10"
 					]
 				}
 			},
@@ -63,12 +65,14 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "{{base}}add_to_cart/1",
+					"raw": "{{base}}add_to_cart/3/5/2022-07-06",
 					"host": [
 						"{{base}}add_to_cart"
 					],
 					"path": [
-						"1"
+						"3",
+						"5",
+						"2022-07-06"
 					]
 				}
 			},
@@ -94,12 +98,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base}}cart/2022-06-30",
+					"raw": "{{base}}cart/2022-07-06",
 					"host": [
 						"{{base}}cart"
 					],
 					"path": [
-						"2022-06-30"
+						"2022-07-06"
 					]
 				}
 			},
@@ -109,7 +113,16 @@
 			"name": "checkout",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{base}}checkout/2022-07-06",
+					"host": [
+						"{{base}}checkout"
+					],
+					"path": [
+						"2022-07-06"
+					]
+				}
 			},
 			"response": []
 		}
