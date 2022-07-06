@@ -80,7 +80,7 @@ Suponiendo el uso de pipenv, una vez en la carpeta raíz los comandos para poner
 
 Según en que entornos puede ser necesario hacer <code> python manage.py makemigrations shop </code>, pero no es lo habitual.
 
-A partir de este punto si elegimos hacer la carga de datos con loaddata:
+A partir de este punto si elegimos hacer la carga de datos con loaddata:  
 4. (A) <code>  python manage.py migrate </code>  
 5. (A) <code> python manage.py loaddata shop/fixtures/initial_data.json </code>  
 
