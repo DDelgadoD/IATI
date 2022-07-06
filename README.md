@@ -36,6 +36,7 @@
 ## <a name="Intro"></a> Introducción
 
 <p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
+
 ---
 
 <!-- TRY IT -->
@@ -43,6 +44,7 @@
 ## <a name="Try"></a> Pruébalo en vivo
 
 <p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
+
 ---
 
 <!-- ARCHIVE LIST -->
@@ -95,6 +97,7 @@ En este directorio se incluyen los archivos para carga de web estática. No se h
 En este directorio se incluyen los archivos para la página principal que muestra los endpoints disponibles.
 
 <p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
+
 ---
 
 <!-- ORIGINAL PETITION -->
@@ -127,6 +130,8 @@ como EMAIL_BACKEND la escritura de emails por consola
 - No te preocupes si no has tocado alguna cosa que se pide. La idea de esta prueba es ver cómo te desenvuelves y resuelves problemas nuevos.
 - No se pide que la prueba sea perfecta aunque sí que sea funcional. La app deberá poder levantarse en local y ser usada desde navegador o Postman.
 
+---
+
 <!--BUILT WITH-->
 ## <a name="Hecho"></a> Hecho con ...
 
@@ -135,6 +140,8 @@ como EMAIL_BACKEND la escritura de emails por consola
 
 <p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
 
+--- 
+
 <!-- LICENSE -->
 ## <a name="Licencia"></a>Licencia
 
@@ -142,7 +149,7 @@ Distributed under the MIT License. See [`LICENSE.md`](https://raw.githubusercont
 
 <p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
 
-
+---
 
 <!-- CONTACT -->
 ## <a name="Contacto"></a>Contacto
