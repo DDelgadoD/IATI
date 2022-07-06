@@ -10,8 +10,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div style="text-align:center;">
-  <a href="http://daviddelgadoduenas.pythonanywhere.com/IATI/">
-    <img src="https://raw.githubusercontent.com/DDelgadoD/DDelgadoD/IATI/images/Screenshot.png" alt="Logo" width="250" height="250">
+  <a href="http://daviddelgadoduenas.pythonanywhere.com">
+    <img src="https://raw.githubusercontent.com/DDelgadoD/IATI/master/media/Screenshot.png" alt="Logo" width="1600" height="400">
   </a>
 
 <h3 style="text-align:center;">IATI</h3>
