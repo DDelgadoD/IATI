@@ -24,28 +24,81 @@
 <!-- TABLE OF CONTENTS -->
 ## Tabla de Contenidos
 1. [Introducción](#Intro)
-2. [Pruébalo en vivo](#Try)
-3. [Archivos Incluidos](#Archivos)
-4. [Petición Original](#Peti)
-5. [Hecho con...](#hecho)
-6. [Licencia](#licencia)
-7. [Contacto](#contacto)
+   - Estado del los requerimientos de la prueba
+   - Consideraciones sobre la prueba
+2. [Instalación](#Setup)
+3. [Pruébalo en vivo](#Try)
+4. [Archivos Incluidos](#Archivos)
+5. [Petición Original](#Peti)
+6. [Hecho con...](#hecho)
+7. [Licencia](#licencia)
+8. [Contacto](#contacto)
 
 <!-- INTRODUCTION -->
 
 ## <a name="Intro"></a> Introducción
 
+### Estado de los requerimientos del proyecto
+
+- [X] Endpoint lista de productos
+- [X] Endpoint añadir al carrito
+- [X] Endpoint ver carrito
+- [X] Endpoint comprar y enviar mail
+- [X] Subido a GitHub
+- [X] Fixture para cargar datos en base de datos
+
+### Consideraciones sobre la prueba
+
+Para crear la prueba he creado un proyecto con dos apps. La primera app "Shop" solo alberga los modelos. La segunda app "API" alberga todos los archivos necesarios para generar las vistas en la API.  
+He optado por este formato porque así podemos implementar la web directamente en django si queremos manteniendo la funcionalidad del API.  
+
+Para la implementación de los modelos he optado por hacer una clase polimórfica de Producto que se amplia con las clases para gorra y camiseta. Por lo que respecta a la implementación del carrito he optado por crear un modelo llamado item donde se guarda el producto, la cantidad y se vincula al carrito mediante un clave foránea.  
+
+Por lo que respeta al "checkout" no se indica que hacer con el carrito tras enviar el correo por lo que he optado por vaciarlo y dejarlo activo. En una situación normal hubiese creado una atributo boleano que indicará que el carrito ha sido comprado, pero teniendo solo un carrito al día eso podría dificultar incluso los test.
+
+En cuanto a las fixtures, he creado dos maneras para poder insertarlas en la base de datos:
+
+- Mediante "loaddata": una vez hechas la migración inicial correriamos el comando <code>python manage.py loaddata /shop/fixtures/initial_data.json</code>.
+- Mediante "migration": una vez hecha la creación de la migración inicial con <code>python manage.py makemigrations</code> en la carpeta "/shop/automatic migration" tenemos un archivo llamado "0002_load_initial_data.py" que deberemos copiar a la carpeta "migrations" de la carpeta "shop". Tras esto al hacer <code>python manage migrate</code> se realizarán las migraciones y la carga de datos.
+
+Para cumplir con los requisitos de la prueba, he creado un "loaddata" custom que no permite a los productos ser creados si ya existen.
+No he creado un script para hacerlo por que no lo he considerado necesario porque al fin y al cabo es un comando a correr. La migración de datos automática no está disponible desde Django 1.7 por eso aun teniendo "initial_data.json" en la carpeta fixture no se realiza la carga. La opción recomendada es "loaddata" porque la migración automática en caso de fallar no permite una gestión tan buena.
+
+Sobre el testeo de la prueba técnica este se ha hecho a mano con Postman donde se han testado todos los puntos de la prueba. Los endpoints usados para el testeo se pueden importar tanto para hacer las comprobaciones en local como en la implementación en vivo alojada en la web [PythonAnywhere](http://daviddelgadoduenas.pythonanywhere.com/).
+
 <p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
 
----
+<!-- SET UP -->
+
+## <a name="Setup"></a> Instalación
+
+Suponiendo el uso de pipenv, una vez en la carpeta raíz los comandos para poner en marcha el proyecto son:
+
+1. <code> pipenv install -r requirements.txt </code>
+2. <code> python manage.py makemigrations </code> 
+
+Según en que entornos puede ser necesario hacer <code> python manage.py makemigrations shop </code>, pero no es lo habitual.
+
+A partir de este punto si elegimos hacer la carga de datos con loaddata:
+3. (A) <code>  python manage.py migrate </code>
+4. (A) <code> python manage.py loaddata shop/fixtures/initial_data.json </code>
+
+Si en cambio elegimos usar las migraciones para cargar los datos, tendremos que mover el archivo "0002_load_initial_data.py" a la carpeta "migrations" dentro de shop, antes de correr el siguiente código:
+3. (B) <code> python manage.py migrate </code>
+
+
+
+<p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
 
 <!-- TRY IT -->
 
 ## <a name="Try"></a> Pruébalo en vivo
 
-<p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
+La aplicación está disponible para la prueba en vivo en:
 
----
+[http://daviddelgadoduenas.pythonanywhere.com/](http://daviddelgadoduenas.pythonanywhere.com/)
+
+<p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
 
 <!-- ARCHIVE LIST -->
 
@@ -98,8 +151,6 @@ En este directorio se incluyen los archivos para la página principal que muestr
 
 <p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
 
----
-
 <!-- ORIGINAL PETITION -->
 ## <a name="Peti"></a>Petición Original
 ## Carrito de compra  
@@ -130,17 +181,13 @@ como EMAIL_BACKEND la escritura de emails por consola
 - No te preocupes si no has tocado alguna cosa que se pide. La idea de esta prueba es ver cómo te desenvuelves y resuelves problemas nuevos.
 - No se pide que la prueba sea perfecta aunque sí que sea funcional. La app deberá poder levantarse en local y ser usada desde navegador o Postman.
 
----
-
 <!--BUILT WITH-->
 ## <a name="Hecho"></a> Hecho con ...
 
-* [Python](https://www.python.org/)
-* [Django](https://www.djangoproject.com/)
+* [Python 3.9](https://www.python.org/)
+* [Django 3.1](https://www.djangoproject.com/)
 
 <p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
-
---- 
 
 <!-- LICENSE -->
 ## <a name="Licencia"></a>Licencia
@@ -148,8 +195,6 @@ como EMAIL_BACKEND la escritura de emails por consola
 Distributed under the MIT License. See [`LICENSE.md`](https://raw.githubusercontent.com/DDelgadoD/DDelgadoD/main/LICENSE.md) for more information.
 
 <p style="text-align:right;">(<a href="#top">volver Arriba</a>)</p>
-
----
 
 <!-- CONTACT -->
 ## <a name="Contacto"></a>Contacto
