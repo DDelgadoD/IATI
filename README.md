@@ -75,16 +75,17 @@ Sobre el testeo de la prueba técnica este se ha hecho a mano con Postman donde 
 Suponiendo el uso de pipenv, una vez en la carpeta raíz los comandos para poner en marcha el proyecto son:
 
 1. <code> pipenv install -r requirements.txt </code>
-2. <code> python manage.py makemigrations </code> 
+2. <code> pipenv shell </code>
+3. <code> python manage.py makemigrations </code> 
 
 Según en que entornos puede ser necesario hacer <code> python manage.py makemigrations shop </code>, pero no es lo habitual.
 
 A partir de este punto si elegimos hacer la carga de datos con loaddata:
-3. (A) <code>  python manage.py migrate </code>
-4. (A) <code> python manage.py loaddata shop/fixtures/initial_data.json </code>
+4. (A) <code>  python manage.py migrate </code>  
+5. (A) <code> python manage.py loaddata shop/fixtures/initial_data.json </code>  
 
-Si en cambio elegimos usar las migraciones para cargar los datos, tendremos que mover el archivo "0002_load_initial_data.py" a la carpeta "migrations" dentro de shop, antes de correr el siguiente código:
-3. (B) <code> python manage.py migrate </code>
+Si en cambio elegimos usar las migraciones para cargar los datos, tendremos que mover el archivo "0002_load_initial_data.py" a la carpeta "migrations" dentro de shop, antes de correr el siguiente código:  
+4. (B) <code> python manage.py migrate </code>
 
 
 
