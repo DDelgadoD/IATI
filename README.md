@@ -11,7 +11,7 @@
 <br />
 <div style="text-align:center;">
   <a href="http://daviddelgadoduenas.pythonanywhere.com">
-    <img src="https://raw.githubusercontent.com/DDelgadoD/IATI/master/media/Screenshot.png" alt="Logo" width="1600" height="400">
+    <img src="https://github.com/DDelgadoD/DDelgadoD/blob/fb70aefccbe71f58a2425f6d0390c64674029ef1/images/Screenshot.png" alt="Logo" width="1600" height="400">
   </a>
 
 <h3 style="text-align:center;">IATI</h3>
